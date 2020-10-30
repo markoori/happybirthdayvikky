@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+.home .home-content .text-3{
+  text-align: center;
+}
+.home .home-content .text-3::before{
+
+}
+.home .home-content .text-3 p{
+  font-size: 70px;
+  te
+}
+.home .home-content .text-3 span{
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+
+.body{
+  display: none;
+}
+#load {
+  position: relative;
+  top:45vh;
+  justify-content: center;
+  align-items: middle;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  font-size: 90px;
+  font-weight: 2000;
+  color:black;
+  text-align: center;
+  font-family: 'Fjalla One', sans-serif;
+  animation: animate 3s linear;
+}
+@keyframes animate {
+  from{
+    background: url("img/others/transparent/140-1401795_vector-graphics-birthday-party-stock-photography-illustration-background-removebg-preview.png")
+    top: 0%;
+  }
+  to{
+    background: url("img/others/transparent/140-1401795_vector-graphics-birthday-party-stock-photography-illustration-background-removebg-preview.png")
+    top:100%;
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+.bdimg .img1{
+  width:100%;
+  height: 100%;
+  z-index: 100;
+  animation: animate1 30s linear infinite;
+  position: absolute;
+  left: -100px;
+}
+@media only screen and (min-width:700px) {
+  .bdimg .img1{
+    width:70%;
+    height: 70%;
+    z-index: 100;
+    animation: animate1 30s linear infinite;
+    position: absolute;
+    left: -100px;
+  }
+  .mySlides img{
+    width:30%;
+  }
+}
+@keyframes animate1 {
+  from{
+    bottom:100px;
+  }
+  to{
+    bottom:-3000px;
+    opacity:0;
+  }
+}
+.home img{
+  width:80px;
+  height: 80px;
+  position:absolute;
+  left: 50vh;
+  right: 30vh;
+  top: 14vh;
+  z-index: 1;
+}
+@media screen and (min-width:500px) {
+  .home img{
+    width: 100px;
+    height: 100px;
+  }
+}
+.about .img2{
+  width:200px;
+  height:-80px;
+  display:flex;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+.service .imgb{
+  width:20px;
+  height:20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.homeefe{
+  background: url("img/special/vikkyori.jpg") no-repeat center;
+  object-fit: fill;
+  width: 100%;
+
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+@media only screen and (min-width: 700px) {
+  .services img{
+    width:50%;
+    margin-left:50%;
+    margin-right: 50%;
+
+  }
+
+}
+#wishes .text{
+  border-bottom: 3px solid red;
+}
+.mySlides img{
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
+}
+.teams .title::after{
+    content: "who with me";
+}
+.teams{
+  display:block;
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: crimson;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+    
+}
+.teams .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
